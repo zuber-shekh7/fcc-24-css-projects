@@ -1,0 +1,60 @@
+:root {
+  --button-font-family: "Oswald", sans-serif;
+  --background-color: #000000;
+  --button-background-color: #000000;
+  --button-text-color: #f3efe0;
+  --button-border-color-1: #ff0000;
+  --button-border-color-2: #00ff00;
+  --button-border-color-3: #0000ff;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-border {
+  background: linear-gradient(
+    115deg,
+    var(--button-border-color-1),
+    var(--button-border-color-2),
+    var(--button-border-color-3)
+  );
+  padding: 4px;
+}
+
+.button {
+  border: none;
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  font-size: 32px;
+  font-family: var(--button-font-family);
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  padding: 8px 16px;
+}
+
+.button-border:hover {
+  background: linear-gradient(
+    115deg,
+    var(--button-border-color-3),
+    var(--button-border-color-2),
+    var(--button-border-color-1)
+  );
+}
+
+.button-border:hover .button {
+  cursor: pointer;
+  padding: 10px 18px;
+  transition: padding;
+  transition-duration: 1s;
+}
