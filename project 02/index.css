@@ -1,0 +1,59 @@
+:root {
+  --background-color: #000000;
+  --search-border-color: #f3efe0;
+  --search-border-focus-color: #1f5c96;
+  --search-focus-text: #55c2db;
+  --search-text-color: #f3efe0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  background-color: var(--background-color);
+}
+
+.container {
+  margin: 24px;
+}
+
+.search-bar {
+  width: 30%;
+  line-height: 36px;
+  padding-left: 12px;
+  border: 2px solid var(--search-border-color);
+  border-radius: 8px;
+  outline: none;
+  background-color: transparent;
+  color: var(--search-text-color);
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 100;
+  transition: all 0.3s;
+}
+
+.search-bar:focus {
+  width: 100%;
+  border-color: var(--search-border-focus-color);
+  color: var(--search-focus-text);
+}
+
+.search-bar:focus::placeholder {
+  color: transparent;
+}
+
+/* https://css-tricks.com/inclusively-hidden/
+ * hiding class, making content visible only to screen readers but not visually
+ * "sr" meaning "screen-reader" 
+*/
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
