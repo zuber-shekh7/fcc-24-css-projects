@@ -1,0 +1,104 @@
+:root {
+  --background-color: #040202;
+  --text-color: #d2d2d2;
+  --card-background-color: #191818;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+}
+
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--card-background-color);
+  padding: 18px;
+}
+
+.card-body {
+  width: 400px;
+  min-width: 325px;
+  margin-bottom: 12px;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card,
+.card img {
+  border-radius: 12px;
+}
+
+.card-footer .user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card-footer .user p {
+  font-weight: 100;
+  color: #7c7979;
+  margin-top: 4px;
+}
+
+.card-footer .user img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.card-footer .analytics {
+  display: none;
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .card-footer .analytics {
+  display: flex;
+  align-items: center;
+}
+
+.card-footer .analytics .logo {
+  height: 24px;
+  width: 24px;
+  color: var(--background-color);
+  margin-right: 6px;
+}
+
+.card-footer .analytics .logo-box {
+  background-color: var(--text-color);
+  margin-right: 12px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.card-footer .analytics .logo-box span {
+  color: #040202;
+  font-weight: 200px;
+}
