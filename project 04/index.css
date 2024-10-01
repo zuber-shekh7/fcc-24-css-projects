@@ -1,0 +1,39 @@
+:root {
+  --dark-gray: #4e4d4d;
+  --light-gray: #c9c9c9;
+  --background-color: #191817;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.circle {
+  margin-right: 6px;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: var(--light-gray);
+  animation: pulse infinite alternate 1s;
+}
+
+@keyframes pulse {
+  from {
+    background-color: var(--light-gray);
+  }
+  to {
+    background-color: var(--dark-gray);
+    height: 38px;
+    width: 38px;
+  }
+}
