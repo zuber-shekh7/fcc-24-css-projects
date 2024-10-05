@@ -1,0 +1,49 @@
+:root {
+  --background-color: #191817;
+  --white: #e9ebee;
+  --orange: #ec6e44;
+  --blue: #1a64ec;
+  --yellow: #cdec36;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+.container,
+.ring {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring {
+  border-radius: 50%;
+}
+
+.ring-1 {
+  height: 240px;
+  width: 240px;
+  background-color: var(--white);
+}
+
+.ring-2 {
+  height: 180px;
+  width: 180px;
+  background-color: var(--orange);
+}
+
+.ring-3 {
+  height: 120px;
+  width: 120px;
+  background-color: var(--blue);
+}
+
+.bullseye {
+  height: 60px;
+  width: 60px;
+  background-color: var(--yellow);
+}
