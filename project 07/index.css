@@ -1,0 +1,56 @@
+:root {
+  --background-color: #191817;
+  --white: #e9ebee;
+  --blue: #1a64ec;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--white);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 900;
+}
+
+h1:after {
+  content: "";
+  animation: swap infinite 6s;
+  background-color: var(--blue);
+  border-radius: 6px;
+  margin-left: 6px;
+  padding: 6px;
+}
+
+@keyframes swap {
+  0% {
+    content: "Coding 👨🏻‍💻";
+  }
+
+  25% {
+    content: "Books 👩🏻‍🏫";
+  }
+
+  50% {
+    content: "Cricket 🏏";
+  }
+
+  75% {
+    content: "Tech 👨🏻‍🔧";
+  }
+
+  100% {
+    content: "Coding 👨🏻‍💻";
+  }
+}
